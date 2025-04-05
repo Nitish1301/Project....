@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(42, 76, 114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    min-width: 40vw;
+    /* max-width: 50vw; */
+    min-height: 50vh;
+    background-color: #fff;
+    border-radius: 2rem;
+}
+h2{
+    color: #002765;
+    display: flex;
+    gap: 10px;
+    padding: 15px 35px;
+    font-size: 2rem;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 15px 20px 12px 20px; */
+    border: 1px solid black;
+    margin: 0 2rem;
+    border-radius: 3rem;
+    background-color: #edeef0;
+}
+input{
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px 25px;
+    border-radius: 3rem;
+    background-color: #edeef0;
+}
+button{
+    padding: 16px 50px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    border-radius: 3rem;
+    cursor: pointer;
+    background-color: #ff5945;
+
+}
+.list {
+    padding: 30px 30px;
+    margin-left: 2.3rem;
+
+    
+}
+
+.list li{
+    text-decoration: none;
+    list-style: none;
+    padding: 10px 10px;
+    margin-left: 10px;
+    position: relative;
+    font-size: 24px;
+    cursor: pointer;
+    /* gap: 10px; */
+}
+.list li::before{
+    content: '';
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    /* background-color: black; */
+    position: absolute;
+    top: 11px;
+    
+    /* left: 0px; */
+    right: 100%;
+    /* border: 1px solid black; */
+    background-image: url(https://cdn-icons-png.flaticon.com/128/15476/15476717.png);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    
+}
+.list li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+.list li.checked::before{
+    background-image: url(jspr.webp);
+}
+span .fa-xmark{
+    position: absolute;
+    right: 20px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+    top: 12px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+span .fa-xmark:hover{
+    background-color: #edeef0;
+    cursor: pointer;
+}
