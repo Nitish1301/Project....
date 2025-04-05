@@ -53,6 +53,20 @@ button{
     background-color: #ff5945;
 
 }
+@media screen and (max-width: 500px) {
+    .container{
+       margin: 0 1.5rem;
+       min-height: 40vh;
+    }
+}
+@media screen and (max-width: 490px) {
+   button{
+    /* margin-right: 2rem; */
+    font-size: 0.9rem;
+    padding: 20px;
+   }
+   
+}
 .list {
     padding: 30px 30px;
     margin-left: 2.3rem;
